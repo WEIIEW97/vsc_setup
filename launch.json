@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "LLDB: compile and debug single file.",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/test",
+      "args": [],
+      "stopOnEntry": false,
+      "cwd": "${fileDirname}",
+      "sourceMap": { ".": "${workspaceFolder}/*" }, 
+      "internalConsoleOptions": "neverOpen",
+      "preLaunchTask": "Clang++: compile single file."
+    },
+    {
+      "name": "LLDB: compile and debug multiple files.",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/test",
+      "args": [],
+      "stopOnEntry": false,
+      "cwd": "${fileDirname}",
+      "sourceMap": { ".": "${workspaceFolder}/*" },
+      "internalConsoleOptions": "neverOpen",
+      "preLaunchTask": "Clang++: compile multiple files."
+    },
+    {
+      "name": "LLDB: debug .exe",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/test",
+      "args": [],
+      "stopOnEntry": false,
+      "sourceMap": { ".": "${workspaceFolder}/*" },
+      "cwd": "${fileDirname}",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
